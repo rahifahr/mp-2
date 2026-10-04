@@ -12,19 +12,19 @@ interface JokeListProps {
   jokes: Joke[];
 }
 
-const Page = styled.div`
+const Page = styled.main`
 min-height: 100vh;
 background: #17151c;
 padding: 60px 20px;
 font-family: Georgia, "Times New Roman", serif;
 `;
 
-const Container = styled.div`
+const Container = styled.section`
 max-width: 850px;
 margin: 0 auto;
 `;
 
-const Header = styled.div`
+const Header = styled.header`
 text-align: center;
 margin-bottom: 45px;
 `;
@@ -44,7 +44,7 @@ font-style: italic;
 margin: 0;
 `;
 
-const JokeCard = styled.div`
+const JokeCard = styled.article`
 background: #211e28;
 border: 1px solid #393241;
 border-radius: 14px;
