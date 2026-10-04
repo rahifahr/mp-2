@@ -100,19 +100,9 @@ margin-top: 20px;
 padding: 15px 18px;
 `;
 
-const PunchlineLabel = styled.p`
-color: #bda7d4;
-font-size: 13px;
-font-weight: bold;
-letter-spacing: 1px;
-margin: 0 0 6px;
-text-transform: uppercase;
-`;
-
 const Punchline = styled.p`
 color: #eee8f2;
 font-size: 18px;
-font-style: italic;
 line-height: 1.6;
 margin: 0;
 `;
@@ -146,12 +136,11 @@ function JokeList({ jokes }: JokeListProps) {
               <Setup>{joke.setup}</Setup>
 
               <RevealButton onClick={() => togglePunchline(joke.id)}>
-                {isRevealed ? "Hide Punchline" : "Reveal Punchline"}
+                {isRevealed ? "Hide" : "Reveal"}
               </RevealButton>
 
               {isRevealed && (
                 <PunchlineBox>
-                  <PunchlineLabel>Punchline</PunchlineLabel>
                   <Punchline>{joke.punchline}</Punchline>
                 </PunchlineBox>
               )}
