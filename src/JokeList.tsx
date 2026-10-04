@@ -92,7 +92,7 @@ transition: background-color 0.2s ease, transform 0.2s ease;
 }
 `;
 
-const PunchlineBox = styled.div`
+const PunchlineBox = styled.section`
 background: #2a2532;
 border-left: 3px solid #bda7d4;
 border-radius: 6px;
